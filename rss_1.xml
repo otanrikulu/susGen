@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>What are we doing these days?</title>
+<description>SusGen activities</description>
+<webMaster>info@susgen.com</webMaster>
+<copyright>SusGen</copyright>
+<item>
+    <title>We are launching</title>
+    <link>http://susgen.com/test02938493284693249064_v1/RSS_launching.txt</link>
+    <pubDate>22 Sep 2011 17:07:25 GMT</pubDate>
+    <author>mot@susgen.com</author>
+</item>
+<item>
+    <title>We have launched</title>
+    <link>http://susgen.com/test02938493284693249064_v1/RSS_launched.txt</link>
+    <pubDate>22 Sep 2011 17:07:48 GMT</pubDate>
+    <author>mot@susgen.com</author>
+</item>
+</channel>
+</rss>

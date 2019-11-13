@@ -1,0 +1,159 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Generator" content="Serif WebPlus X5">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<title>LogIn</title>
+<link rel="stylesheet" href="wpscripts/nav_258style.css" type="text/css">
+<script type="text/javascript" src="wpscripts/jsNavBarFuncs.js"></script>
+<script type="text/javascript" src="wpscripts/global_navtree.js"></script>
+<script type="text/javascript" src="wpscripts/wp_navbar_menub.js"></script>
+<script type="text/javascript">
+function validate_form_25( form )
+{
+    if( ltrim(rtrim(form.elements['USERNAME'].value,' '),' ')=="" ) { alert("Please give your username"); form.elements['USERNAME'].focus(); return false; }
+    if( ltrim(rtrim(form.elements['PASSWORD'].value,' '),' ')=="" ) { alert("Please give your password"); form.elements['PASSWORD'].focus(); return false; }
+    return true;
+}
+</script>
+<script type="text/javascript">
+function validate_form_27( form )
+{
+    if( ltrim(rtrim(form.elements['USERNAME'].value,' '),' ')=="" ) { alert("Please give your username"); form.elements['USERNAME'].focus(); return false; }
+    if( ltrim(rtrim(form.elements['PASSWORD'].value,' '),' ')=="" ) { alert("Please give your password"); form.elements['PASSWORD'].focus(); return false; }
+    if( ltrim(rtrim(form.elements['EMAIL'].value,' '),' ')=="" ) { alert("Please give your email address"); form.elements['EMAIL'].focus(); return false; }
+    if(!ValidateEmail(form.elements['EMAIL'].value)) { alert("Please give a valid email address"); form.elements['EMAIL'].focus(); return false; }
+    return true;
+}
+</script>
+<style type="text/css">
+body {margin: 0px; padding: 0px;}
+.Normal-C
+{
+    font-family:"Verdana", sans-serif; font-size:13.0px; line-height:1.23em;
+}
+.Body-C
+{
+    font-family:"Verdana", sans-serif; font-size:13.0px; line-height:1.23em;
+}
+.Button1,.Button1:link,.Button1:visited{background-position:0px 0px;text-decoration:none;display:block;position:absolute;background-image:url(wpimages/wp9d632ea8_06.png);}
+.Button1:focus{outline-style:none;}
+.Button1:hover{background-position:0px -90px;}
+.Button1:active{background-position:0px -45px;}
+.Button1 span,.Button1:link span,.Button1:visited span{color:#808080;font-family:Arial,sans-serif;font-weight:normal;text-decoration:none;text-align:center;text-transform:none;font-style:normal;left:0px;top:15px;width:84px;height:12px;font-size:9px;display:block;position:absolute;cursor:pointer;}
+.Button2,.Button2:link,.Button2:visited{background-position:0px -45px;text-decoration:none;display:block;position:absolute;background-image:url(wpimages/wpea562003_06.png);}
+.Button2:focus{outline-style:none;}
+.Button2:hover{background-position:0px -90px;}
+.Button2 span,.Button2:link span,.Button2:visited span{color:#808080;font-family:Arial,sans-serif;font-weight:normal;text-decoration:none;text-align:center;text-transform:none;font-style:normal;left:0px;top:15px;width:84px;height:12px;font-size:9px;display:block;position:absolute;cursor:pointer;}
+.Button3,.Button3:link,.Button3:visited{background-position:0px 0px;text-decoration:none;display:block;position:absolute;background-image:url(wpimages/wp897faa9b_06.png);}
+.Button3:focus{outline-style:none;}
+.Button3:hover{background-position:0px -90px;}
+.Button3:active{background-position:0px -45px;}
+.Button3 span,.Button3:link span,.Button3:visited span{color:#808080;font-family:Arial,sans-serif;font-weight:normal;text-decoration:none;text-align:center;text-transform:none;font-style:normal;left:0px;top:15px;width:83px;height:12px;font-size:9px;display:block;position:absolute;cursor:pointer;}
+</style>
+<script type="text/javascript" src="wpscripts/jspngfix.js"></script>
+<link rel="stylesheet" href="wpscripts/wpstyles.css" type="text/css">
+<script type="text/javascript">var blankSrc = "wpscripts/blank.gif";
+</script>
+</head>
+
+<body text="#000000" style="background-color:#ffffff; text-align:center; height:1000px;">
+<div style="background-color:transparent;text-align:left;margin-left:auto;margin-right:auto;position:relative;width:750px;height:1000px;">
+<script type="text/javascript" id="nav_258_script">
+try {
+    var navtree_nav_258 = WpNavBar.getNavTreeParentLevel( global_navtree, {'m_sThisPageUrl':'login.html',
+    'm_sNavBarTarget':'_self',
+    'm_bIncludeHome':false,
+    'm_bIncludeAnchors':false,
+    'm_bFlash':false,
+    'm_bIncludeChildren':true} );
+    if( !navtree_nav_258 ) throw WpNavBar.getErrorObj( 'Link tree could not be read' );
+    var nav_258 = new wp_navbar_menub("nav_258", navtree_nav_258, {'m_bVertical':false,'m_bPopupBelow':1,'m_bPopupRight':1,'m_iTimeOut':500,'m_iPopupAlignmentH':0,'m_sId':'nav_258',
+    'm_sScriptId':'nav_258_script',
+    'm_iLeft':3,
+    'm_iTop':783,
+    'm_sCssClass':'nav_258style',
+    'm_iWidth':714,
+    'm_iHeight':46}, {'m_iMaxCssLevel':1,
+    top:{'m_iHorizontalPadding':0,'m_iVerticalPadding':0,'m_iHorizontalPosition':1,'m_iVerticalPosition':0,'m_bWrap':true,'m_iHorizontalButtonSeparation':2,'m_iVerticalButtonSeparation':2,'m_bButtonsSameSize':false,'m_bStretchToWidth':false},
+    level1:{'m_bFirstPopupSameSize':true,'m_iMinWidth':100,'m_iFirstPopupOffset':1,'m_iInterPopupOffset':1,'m_iOpacity':80,'m_bFade':false,'m_iFadeSpeed':5,
+    separator:{'m_bAllowSeparators':true}}});
+} catch(e){
+document.write( '<div style="position:absolute;left:3;top:783;width:714;height:46">There was an error generating the navbar:<br>' + e.message + '</div>' );
+}
+</script>
+<noscript>
+
+<DIV style="POSITION: absolute; WIDTH: 714px; HEIGHT: 46px; TOP: 783px; LEFT: 3px" id=nav_258 class=nav_258style><A style="POSITION: absolute; HEIGHT: 16px; VISIBILITY: visible; TOP: 0px; LEFT: 154px" id=nav_258_I0 href="index.html" target=_self m_depth="0" m_parent="null" m_idchild="null" m_menu="null">Home</A><A style="POSITION: absolute; HEIGHT: 16px; VISIBILITY: visible; TOP: 0px; LEFT: 200px" id=nav_258_I1 href="whysusgen.html" target=_self m_depth="0" m_parent="null" m_idchild="null" m_menu="null">Why susGen</A><BR><A style="POSITION: absolute; HEIGHT: 16px; VISIBILITY: visible; TOP: 0px; LEFT: 291px" id=nav_258_I2 href="joinus.html" target=_self m_depth="0" m_parent="null" m_idchild="null" m_menu="null">Join Us</A><A style="POSITION: absolute; HEIGHT: 16px; VISIBILITY: visible; TOP: 0px; LEFT: 347px" id=nav_258_I3 href="coinnovate.html" target=_self m_depth="0" m_parent="null" m_idchild="null" m_menu="null">Co-Innovate</A><BR><A style="POSITION: absolute; HEIGHT: 16px; VISIBILITY: visible; TOP: 0px; LEFT: 440px" id=nav_258_I4 class=" hassubmenu currentpage" href="login.html" target=_self m_depth="0" m_parent="null" m_idchild="nav_258_P4" m_menu="null">LogIn</A><A style="POSITION: absolute; HEIGHT: 16px; VISIBILITY: visible; TOP: 0px; LEFT: 491px" id=nav_258_I5 href="aboutus.html" target=_self m_depth="0" m_parent="null" m_idchild="null" m_menu="null">About Us</A></DIV>
+</noscript>
+<form id="form_25" name="userinfo_2" onsubmit="return validate_form_25(this)" action="" method="post" target="_self" enctype="text/plain" style="margin:0px;">
+<div id="txt_4" style="position:absolute;left:106px;top:428px;width:69px;height:16px;overflow:hidden;">
+<p class="Wp-Normal-P"><label for="edit_1"><span class="Normal-C">Username</span></label></p>
+</div>
+<input type="text" id="edit_1" name="USERNAME" maxlength="50" value="" style="position:absolute; left:191px; top:428px; width:100px;">
+<div id="txt_5" style="position:absolute;left:106px;top:458px;width:67px;height:16px;overflow:hidden;">
+<p class="Wp-Normal-P"><label for="edit_2"><span class="Normal-C">Password</span></label></p>
+</div>
+<input type="password" id="edit_2" name="PASSWORD" maxlength="25" value="" style="position:absolute; left:191px; top:458px; width:100px;">
+<input type="button" style="position:absolute; left:106px; top:488px; width:76px; height:22px;" id="butn_1" name="Login" value="Log In" onclick="location.href='myworld.html'">
+<input type="reset" style="position:absolute; left:190px; top:488px; width:72px; height:22px;" id="butn_2" name="Reset" value="Clear">
+</form>
+<form id="form_27" name="userinfo_1" onsubmit="return validate_form_27(this)" action="mailto:info@susgen.com" method="post" target="_self" enctype="text/plain" style="margin:0px;">
+<div id="txt_4" style="position:absolute;left:387px;top:428px;width:69px;height:16px;overflow:hidden;">
+<p class="Wp-Normal-P"><label for="edit_1"><span class="Normal-C">Username</span></label></p>
+</div>
+<input type="text" id="edit_1" name="USERNAME" maxlength="50" value="" style="position:absolute; left:504px; top:428px; width:100px;">
+<div id="txt_5" style="position:absolute;left:387px;top:458px;width:67px;height:16px;overflow:hidden;">
+<p class="Wp-Normal-P"><label for="edit_2"><span class="Normal-C">Password</span></label></p>
+</div>
+<input type="password" id="edit_2" name="PASSWORD" maxlength="25" value="" style="position:absolute; left:504px; top:458px; width:100px;">
+<div id="txt_6" style="position:absolute;left:387px;top:488px;width:101px;height:16px;overflow:hidden;">
+<p class="Wp-Normal-P"><label for="edit_3"><span class="Normal-C">E-<wbr>mail address</span></label></p>
+</div>
+<input type="text" id="edit_3" name="EMAIL" maxlength="100" value="" style="position:absolute; left:504px; top:488px; width:150px;">
+<input type="submit" style="position:absolute; left:387px; top:518px; width:91px; height:22px;" id="butn_1" name="Register" value="Register">
+<input type="reset" style="position:absolute; left:486px; top:518px; width:72px; height:22px;" id="butn_2" name="Reset" value="Clear">
+</form>
+<img src="wpimages/wp4d2a297e_06.png" width="123" height="20" border="0" id="art_1" title="" alt="Existing Users" onload="OnLoadPngFix()" style="position:absolute;left:100px;top:384px;">
+<img src="wpimages/wpf182edfa_06.png" width="140" height="19" border="0" id="art_2" title="" alt="New to SusGen?" onload="OnLoadPngFix()" style="position:absolute;left:380px;top:384px;">
+<img src="wpimages/wpd43800aa_06.jpg" width="700" height="199" border="0" id="pic_1" alt="" style="position:absolute;left:20px;top:580px;">
+<img src="wpimages/wp258af6cf_06.jpg" width="700" height="200" border="0" id="pic_2" alt="" style="position:absolute;left:20px;top:160px;">
+<img src="wpimages/wp1e49ffc5_06.png" width="53" height="69" border="0" id="art_3" title="" alt="Do&#10;Your&#10;Part" onload="OnLoadPngFix()" style="position:absolute;left:599px;top:266px;">
+<img src="wpimages/wpbb807150_06.png" width="137" height="69" border="0" id="art_4" title="" alt="Live&#10;a Sustainable&#10;Life" onload="OnLoadPngFix()" style="position:absolute;left:34px;top:671px;">
+<div style="position:absolute;left:340px;top:559px;width:378px;height:21px; background-color:#82a5e1; border: 1px solid #82a5e1;">
+</div>
+<div id="txt_50_C01" style="position:absolute;left:341px;top:559px;width:377px;height:20px;">
+    <div class="Wp-Body-P">
+        <span class="Body-C"> &nbsp;If You Are a Business or a Community, <a href="joinus.html" style="text-decoration:underline;">Register Here</a>…</span></div>
+</div>
+<img src="wpimages/wp5dcdd45c_06.png" width="140" height="114" border="0" id="meta_284" alt="" onload="OnLoadPngFix()" style="position:absolute;left:40px;top:24px;">
+<div id="nav_162" style="position:absolute;left:202px;top:20px;width:518px;height:120px;">
+    <a href="index.html" id="nav_162_B1" class="Button1" style="display:block;position:absolute;left:5px;top:5px;width:85px;height:45px;"><span>Home</span></a>
+    <a href="whysusgen.html" id="nav_162_B2" class="Button1" style="display:block;position:absolute;left:90px;top:5px;width:85px;height:45px;"><span>Why susGen</span></a>
+    <a href="joinus.html" id="nav_162_B3" class="Button1" style="display:block;position:absolute;left:174px;top:5px;width:85px;height:45px;"><span>Join Us</span></a>
+    <a href="coinnovate.html" id="nav_162_B4" class="Button1" style="display:block;position:absolute;left:259px;top:5px;width:85px;height:45px;"><span>Co-Innovate</span></a>
+    <a href="login.html" id="nav_162_B5" class="Button2" style="display:block;position:absolute;left:344px;top:5px;width:85px;height:45px;"><span>LogIn</span></a>
+    <a href="aboutus.html" title="About Us" id="nav_162_B6" class="Button1" style="display:block;position:absolute;left:429px;top:5px;width:85px;height:45px;"><span>About Us</span></a>
+</div>
+<form id="site_search_2" action="" onSubmit="return false;" style="position: absolute; top:98px; left:470px; width:250px; height:22px;margin: 0; padding: 0;">
+    <input id="site_search_2_input" name="site_search_2_input" onkeypress="if (event.keyCode==13) window.location.href='search.html?site_search_results_2='+document.getElementById('site_search_2_input').value+'&amp;depth=0';" style="width: 157px;" type="text"><div style="display: inline"><button onclick="window.location.href='search.html?site_search_results_2='+document.getElementById('site_search_2_input').value+'&amp;depth=0';" style="width: 83px;">Search</button></div>
+</form>
+<a href="index.html"><img src="wpimages/wp5533b116.gif" width="140" height="119" border="0" id="hs_4" title="" alt="Home" style="position:absolute;left:40px;top:20px;"></a>
+<script type="text/javascript" src="wpscripts/jsValidation.js"></script>
+
+<div id="nav_162_B5M" style="position:absolute;visibility:hidden;width:84px;height:270px;">
+<a href="myworld.html" id="nav_162_B5M_L1" class="Button3" style="display:block;position:absolute;left:0px;top:0px;width:84px;height:45px;"><span>My World</span></a>
+<a href="communities.html" id="nav_162_B5M_L2" class="Button3" style="display:block;position:absolute;left:0px;top:45px;width:84px;height:45px;"><span>Communities</span></a>
+<a href="mylearning.html" id="nav_162_B5M_L3" class="Button3" style="display:block;position:absolute;left:0px;top:90px;width:84px;height:45px;"><span>My Learning</span></a>
+<a href="needs.html" id="nav_162_B5M_L4" class="Button3" style="display:block;position:absolute;left:0px;top:135px;width:84px;height:45px;"><span>My Needs</span></a>
+<a href="myprofile.html" id="nav_162_B5M_L5" class="Button3" style="display:block;position:absolute;left:0px;top:180px;width:84px;height:45px;"><span>My Profile</span></a>
+<a href="myinterests.html" id="nav_162_B5M_L6" class="Button3" style="display:block;position:absolute;left:0px;top:225px;width:84px;height:45px;"><span>My Interests</span></a>
+</div><script type="text/javascript" src="wpscripts/jsMenu.js"></script>
+<script type="text/javascript">
+wpmenustack.setRollovers([['nav_162_B1',''],['nav_162_B2',''],['nav_162_B3',''],['nav_162_B4',''],['nav_162_B5','nav_162_B5M',{"m_vertical":true}],['nav_162_B6','']]);
+wpmenustack.setMenus(['nav_162_B5M'],null);
+</script>
+</div>
+</body>
+</html>
